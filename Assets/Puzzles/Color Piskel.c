@@ -1,12 +1,12 @@
 #include <stdint.h>
 
-#define NEW_PISKEL_FRAME_COUNT 1
-#define NEW_PISKEL_FRAME_WIDTH 6
-#define NEW_PISKEL_FRAME_HEIGHT 6
+#define COLOR_PISKEL_FRAME_COUNT 1
+#define COLOR_PISKEL_FRAME_WIDTH 6
+#define COLOR_PISKEL_FRAME_HEIGHT 6
 
-/* Piskel data for "New Piskel" */
+/* Piskel data for "Color Piskel" */
 
-static const uint32_t new_piskel_data[1][36] = {
+static const uint32_t color_piskel_data[1][36] = {
 {
 0xff3d2542, 0xff3d2542, 0xff3d2542, 0xff3d2542, 0xff3d2542, 0x00000000, 
 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0x00000000, 0x00000000, 

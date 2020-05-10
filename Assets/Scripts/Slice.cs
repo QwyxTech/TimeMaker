@@ -1,6 +1,9 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Slice : MonoBehaviour
+public class Slice
 {
     
     // state
@@ -41,7 +44,7 @@ public class Slice : MonoBehaviour
         Color currentColor = Color.clear;
         int currentCount = 0;
 
-        foreach (int p in myPixels)
+        foreach (Color p in myPixels)
         {
             if (p == currentColor)
             {
@@ -54,9 +57,15 @@ public class Slice : MonoBehaviour
                     indicatorList.Add(new Indicator(currentCount, currentColor));
                 }
 
-                currentColor = Color.clear;
-                currentCount = 0;
+                currentColor = p;
+                currentCount = 1;
             }
+        }
+
+        // Check to add the last color if needed
+        if (currentColor != Color.clear)
+        {
+            indicatorList.Add(new Indicator(currentCount, currentColor));
         }
 
         myIndicators = indicatorList.ToArray();

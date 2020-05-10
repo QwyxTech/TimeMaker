@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class Indicator : MonoBehaviour
+public class Indicator
 {
 
     // state
     int count;
     Color color;
 
-    public void Indicator(int n, Color c)
+    public Indicator(int n, Color c)
     {
         count = n;
         color = c;
